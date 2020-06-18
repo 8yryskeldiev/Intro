@@ -7,7 +7,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.tabs.TabLayout;
+
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +36,7 @@ public class IntroActivity extends AppCompatActivity {
         skip.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                saveIsShown();
                 Intent intent = new Intent( IntroActivity.this, MainActivity.class );
                 startActivity( intent );
                 finish();
@@ -64,6 +68,7 @@ public class IntroActivity extends AppCompatActivity {
         if (viewPager.getCurrentItem() < fragmentCount-1) {
             viewPager.setCurrentItem(viewPager.getCurrentItem() + 1, true);
         } else {
+            saveIsShown();
             Intent intent=new Intent( this , MainActivity.class );
             startActivity( intent );
             finish();
@@ -93,6 +98,9 @@ public class IntroActivity extends AppCompatActivity {
             return fragmentCount;
         }
     }
-
+    private void saveIsShown() {
+        SaveQuestions sv = new SaveQuestions(this);
+        sv.saveIsShown();
+    }
 
 }
