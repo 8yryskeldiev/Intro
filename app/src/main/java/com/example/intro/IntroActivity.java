@@ -22,8 +22,6 @@ public class IntroActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_intro );
-        TabLayout tabLayout = findViewById( R.id.tabDots );
-        tabLayout.setupWithViewPager( viewPager, true );
         next = findViewById( R.id.next );
         next.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -41,6 +39,8 @@ public class IntroActivity extends AppCompatActivity {
             }
         } );
         viewPager = findViewById( R.id.viewPager );
+        TabLayout tabLayout = findViewById( R.id.tabDots );
+        tabLayout.setupWithViewPager( viewPager, true );
         viewPager.setAdapter( new SectionsPagerAdapter( getSupportFragmentManager() ) );
         viewPager.addOnPageChangeListener( new ViewPager.SimpleOnPageChangeListener() {
             @Override
