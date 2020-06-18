@@ -7,5 +7,11 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="buttonStyle">
+        <item name="android:background">@drawable/button_example</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+
+    </style>
+
 
 </resources>
