@@ -12,6 +12,13 @@
         <item name="android:textColor">#FFFFFFFF</item>
 
     </style>
+    <style name="mainbuttonStyle">
+        <item name="android:background">@drawable/main_button</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:text">"Next"</item>
+
+    </style>
 
 
 </resources>

@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean isShown() {
         SaveQuestions sv = new SaveQuestions(this);
-     return sv.isShown();
+     return  sv.isShown();
     }
 
 
