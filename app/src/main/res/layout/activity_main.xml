@@ -42,6 +42,9 @@
      <Button
          android:layout_width="60dp"
          android:layout_height="50dp"
+         android:text="+"
+         android:textColor="@color/colorWight"
+         android:textSize="32sp"
          app:layout_constraintRight_toRightOf="parent"
          android:background="@drawable/button2"
          app:layout_constraintBottom_toBottomOf="parent"
@@ -107,9 +110,9 @@ app:layout_constraintRight_toLeftOf="@id/one"
                     android:textColor="#000000"
                     android:textSize="10sp"
                     app:layout_constraintTop_toBottomOf="@id/free"
-                    app:layout_constraintLeft_toRightOf="@id/prise"
+                    app:layout_constraintLeft_toRightOf="@id/one"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintRight_toLeftOf="@id/accessibility"
+                    app:layout_constraintRight_toLeftOf="@id/four"
                     android:text="Participants"
                     />
                 <TextView
