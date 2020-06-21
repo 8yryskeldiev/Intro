@@ -18,17 +18,175 @@
             android:layout_height="255dp"
             android:layout_margin="15dp"
             android:background="@drawable/fones"
+            android:orientation="vertical"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="25dp"
+                    android:textSize="8dp"
+                    android:id="@+id/category"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="3dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textColor="@color/colorWight"
+                    android:background="@drawable/category"
+                    android:text="Category"/>
+     <Button
+         android:layout_width="60dp"
+         android:layout_height="50dp"
+         app:layout_constraintRight_toRightOf="parent"
+         android:background="@drawable/button2"
+         app:layout_constraintBottom_toBottomOf="parent"
+
+         />
 
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore the nightlife of your city"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textColor="#000000"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/free"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+app:layout_constraintRight_toLeftOf="@id/one"
+                    app:layout_constraintBottom_toTopOf="@id/prise"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:text="Free"
+             />
+                <TextView
+                    android:id="@+id/prise"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="#000000"
+                    app:layout_constraintTop_toBottomOf="@id/free"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/one"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:text="Prise"
+                    />
+
+                <TextView
+                    android:id="@+id/participants"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    app:layout_constraintTop_toBottomOf="@id/free"
+                    app:layout_constraintLeft_toRightOf="@id/prise"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/accessibility"
+                    android:text="Participants"
+                    />
+                <TextView
+                    android:id="@+id/accessibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textColor="#000000"
+                    app:layout_constraintTop_toBottomOf="@id/free"
+                    app:layout_constraintLeft_toRightOf="@id/four"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="Accessibility"
+                    />
+
+<Button
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:text="1"
+    android:id="@+id/one"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/participants"
+    app:layout_constraintLeft_toRightOf="@id/free"
+    app:layout_constraintRight_toLeftOf="@id/two"
+    style="@style/fourbuttonStyle"/>
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="2"
+                    android:id="@+id/two"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/participants"
+                    app:layout_constraintLeft_toRightOf="@id/one"
+                    app:layout_constraintRight_toLeftOf="@id/three"
+                    style="@style/fourbuttonStyle"/>
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="3"
+                    android:id="@+id/three"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/participants"
+                    app:layout_constraintLeft_toRightOf="@id/two"
+                    app:layout_constraintRight_toRightOf="@id/four"
+                    style="@style/fourbuttonStyle"/>
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:text="4+"
+                    android:id="@+id/four"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/participants"
+                    app:layout_constraintLeft_toRightOf="@id/three"
+                    app:layout_constraintRight_toLeftOf="@id/raduga"
+                    style="@style/fourbuttonStyle"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+                    android:textSize="8dp"
+                    android:id="@+id/raduga"
+                    app:layout_constraintLeft_toRightOf="@id/four"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/accessibility"
+                    android:textColor="@color/colorWight"
+                    android:background="@drawable/raduga"
+/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
         <Button
             android:id="@+id/next_main"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_margin="10dp"
-
             style="@style/mainbuttonStyle"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -63,40 +221,40 @@
 </LinearLayout>
 
     <LinearLayout
-        android:layout_width="230dp"
-        android:layout_height="360dp"
+        android:layout_width="223dp"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="  Price"
-    android:layout_marginLeft="5dp"
-    android:layout_marginTop="5dp"
-    android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="  Price"
+            android:textColor="#FFFFFF" />
 
         <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
             android:id="@+id/seekbar_two"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             app:bar_color="#FFFFFF"
-            app:bar_highlight_color="#4A00E0"
-            />
+            app:bar_highlight_color="#4A00E0" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:text="  Accessibility"
             android:layout_marginTop="70dp"
-            android:textColor="#FFFFFF"/>
+            android:text="  Accessibility"
+            android:textColor="#FFFFFF" />
+
         <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
             android:id="@+id/seekbar_one"
             android:layout_width="170dp"
 
             android:layout_height="wrap_content"
             app:bar_color="#FFFFFF"
-            app:bar_highlight_color="#4A00E0"
-            />
+            app:bar_highlight_color="#4A00E0" />
 
     </LinearLayout>
 
